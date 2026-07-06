@@ -9,4 +9,4 @@ polynomial interpolation, secret splitting/reconstruction, share validation,
 and mock multi-party signing flow.
 
 ## Status
-🚧 Work in progress building incrementally, one concept per commit.
+🚧 Work in progress building incrementally, one concept at a itme
