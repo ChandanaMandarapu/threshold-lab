@@ -50,4 +50,18 @@ mod tests {
         let p = Polynomial::new(vec![7]);
         assert_eq!(p.eval(5, 101), 7);
     }
+
+    #[test]
+    fn linear_poly_evals_correctly() {
+        // f(x) = 3 + 2x
+        let p = Polynomial::new(vec![3, 2]);
+        assert_eq!(p.eval(0, 1_000_003), 3);
+        assert_eq!(p.eval(2, 1_000_003), 7);
+    }
+
+    #[test]
+    fn degree_matches_coefficient_count() {
+        let p = Polynomial::new(vec![1, 2, 3]);
+        assert_eq!(p.degree(), 2);
+    }
 }
